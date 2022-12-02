@@ -123,6 +123,7 @@ void Process::initialize(int argc, char** argv)
 
 void Process::putLog(const char* format, ...)
 {
+    return;
     _mt.lock();
     va_list arg;
     va_start(arg, format);
